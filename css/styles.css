@@ -1,0 +1,53 @@
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+  background-color: #fff0ca;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 3rem 3rem 5% 5%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 0.5;
+}
+
+footer {
+  text-align: center;
+}
+
+#test {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: #fed878;
+  border-radius: 10%;
+}
