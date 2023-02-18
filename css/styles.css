@@ -72,6 +72,28 @@ article {
   flex: 1;
 }
 
+#banner {
+  /* add a local background image to element here */
+  background-image: url("../images/banner-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  color: #fff0ca;
+}
+
+#banner h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#banner p {
+  font-size: 1rem;
+  text-align: center;
+  width: 65%;
+  margin-left: 15%;
+}
+
 footer {
   text-align: center;
   display: flex;
