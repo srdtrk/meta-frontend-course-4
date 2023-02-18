@@ -1,4 +1,4 @@
-#logo {
+.logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -20,6 +20,7 @@ h2 {
   font-size: 2rem;
 }
 
+/* ----------------------- Navigation bar --------------------------- */
 nav {
   background-color: #222222;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -64,6 +65,7 @@ nav a:hover {
   background-color: #f5f5f5;
   color: #ff4d00;
 }
+/* ---------------------------------------------------------------- */
 
 section {
   display: flex;
@@ -73,7 +75,8 @@ article {
   flex: 1;
 }
 
-#banner {
+/* ---------------------------- Banner: --------------------------- */
+.banner {
   /* add a local background image to element here */
   background-image: url("../images/banner-2.jpg");
   background-size: cover;
@@ -83,18 +86,19 @@ article {
   color: #fff0ca;
 }
 
-#banner h1 {
+.banner h1 {
   font-size: 3rem;
   text-align: center;
 }
 
-#banner p {
+.banner p {
   font-size: 1rem;
   text-align: center;
   width: 65%;
   margin-left: 15%;
 }
-
+/* ----------------------------------------------------------------- */
+/* ----------------------------- Footer: --------------------------- */
 footer {
   margin-top: 50px;
   background-color: #ffe6d0;
@@ -115,7 +119,8 @@ footer p {
   margin: 0;
   padding-left: 20px;
 }
-
+/* ---------------------------------------------------------------- */
+/* ------------------------ The 3 Columns: ------------------------ */
 label {
   display: block;
   font-size: 14px;
@@ -173,27 +178,39 @@ p {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
+/* --------------------------------------------------------- */
+/* -------------------- Slideshow Banner: ------------------- */
 .slideshow-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-  margin: 20px;
+  width: 100%;
+  max-height: 400px;
+  max-width: 1600px;
+  margin: 30px auto;
   overflow: hidden;
-  position: relative;
+  border-radius: 10px;
 }
 
 .slides {
   display: flex;
-  flex-direction: row;
-  height: 100%;
-  position: absolute;
-  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  flex-wrap: nowrap;
+  animation: slideshow 20s linear infinite;
 }
 
 .slides img {
-  height: 100%;
-  object-fit: cover;
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-350%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* ---------------------------------------------------------- */
