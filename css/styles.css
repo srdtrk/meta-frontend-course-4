@@ -20,14 +20,48 @@ h2 {
   font-size: 2rem;
 }
 
+nav {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+}
+
 nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-align: center;
+  justify-content: center;
 }
 
 nav li {
   display: inline-block;
   margin: 0 1rem;
+  margin-right: 1rem;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  /* border: 2px solid black; */
+  /* margin: 0.5rem; */
+}
+
+nav a:hover {
+  background-color: #f5f5f5;
 }
 
 section {
@@ -35,19 +69,16 @@ section {
 }
 
 article {
-  flex: 0.5;
+  flex: 1;
 }
 
 footer {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#test {
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  background-color: #fed878;
-  border-radius: 10%;
+footer img {
+  width: 10%;
 }
